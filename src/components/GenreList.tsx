@@ -9,7 +9,7 @@ const GenreList = () => {
 	return (
 		<List>
 			{data.map((genre) => (
-				<ListItem key={genre.id} p="5px">
+				<ListItem key={genre.id} paddingY="5px">
 					<HStack>
 						<Image
 							boxSize="32px"
