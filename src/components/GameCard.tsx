@@ -13,7 +13,7 @@ const GameCard = ({ game }: Props) => {
 	return (
 		<Card borderRadius={20}>
 			<Image src={getCroppedImageURL(game.background_image)}></Image>
-			<CardBody mt={"-10px"}>
+			<CardBody>
 				<Heading fontSize="md">{game.name}</Heading>
 				<HStack justifyContent={"space-between"} mt={"10px"}>
 					<PlatformIconList
