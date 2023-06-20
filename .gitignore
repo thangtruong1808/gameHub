@@ -1,0 +1,12 @@
+# ignore all files in any directory named node_modules
+/node_modules
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
