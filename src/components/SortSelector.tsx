@@ -27,7 +27,6 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
 				rightIcon={<BsChevronDown />}
 			>
 				Order by: {currentSortOrder?.label || "Relevance"}
-				{/* {selectedPlatform?.name || "Platforms"} */}
 			</MenuButton>
 			<MenuList>
 				{sortOrders.map((order) => (
