@@ -24,6 +24,7 @@ const GameGrid = ({ gameQuery }: Props) => {
 				mt={5}
 				padding={5}
 			>
+				{data.length <= 0 && <Text>Sorry, data is updating . . .</Text>}
 				{isLoading &&
 					skeletons.map((skeleton) => (
 						<GameCardContainer key={skeleton}>
