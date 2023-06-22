@@ -25,27 +25,28 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
 	// style={{ width: "100%" }} already define in index.css
 	return (
 		<>
-			<Heading fontSize="2xl" marginBottom={5}>
+			<Heading fontSize="2xl" marginBottom={3}>
 				Genres
 			</Heading>
 			<List>
 				{data.map((genre) => (
-					<ListItem key={genre.id} padding="5px" mt={1}>
+					<ListItem key={genre.id} paddingY="5px">
 						<HStack>
 							<Image
-								objectFit={"cover"}
 								boxSize="32px"
-								borderRadius={5}
+								borderRadius={8}
+								objectFit="cover"
 								src={getCroppedImageURL(genre.image_background)}
+								mr={3}
 							/>
 							<Button
-								whiteSpace="normal"
+								whiteSpace="pre-wrap"
 								textAlign="left"
 								color={genre.id === selectedGenre?.id ? "tomato" : "normal"}
 								// fontWeight={genre.id === selectedGenre?.id ? "bold" : "normal"}
-								variant="link"
-								size="sm"
 								onClick={() => onSelectGenre(genre)}
+								size="md"
+								variant="link"
 							>
 								{genre.name}
 							</Button>
