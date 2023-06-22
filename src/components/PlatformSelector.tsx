@@ -17,7 +17,7 @@ const PlatformSelector = ({ onSelectPlatform, selectedPlatform }: Props) => {
 				as={Button}
 				colorScheme="yellow"
 				ml={5}
-				borderRadius={20}
+				borderRadius={10}
 				rightIcon={<BsChevronDown />}
 			>
 				{selectedPlatform?.name || "Platforms"}

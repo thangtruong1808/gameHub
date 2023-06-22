@@ -23,7 +23,7 @@ const SortSelector = ({ onSelectSortOrder, sortOrder }: Props) => {
 				as={Button}
 				colorScheme="yellow"
 				ml={5}
-				borderRadius={20}
+				borderRadius={10}
 				rightIcon={<BsChevronDown />}
 			>
 				Order by: {currentSortOrder?.label || "Relevance"}

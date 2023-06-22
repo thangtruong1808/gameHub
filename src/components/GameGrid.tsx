@@ -5,6 +5,7 @@ import GameCardSkeleton from "./GameCardSkeleton";
 import GameCardContainer from "./GameCardContainer";
 import { Genre } from "../hooks/useGenres";
 import { GameQuery } from "../App";
+import noImage from "../assets/no-image-placeholder.webp";
 interface Props {
 	gameQuery: GameQuery;
 	// selectedGenre: Genre | null;
@@ -24,7 +25,7 @@ const GameGrid = ({ gameQuery }: Props) => {
 				mt={5}
 				padding={5}
 			>
-				{data.length <= 0 && <Text>Sorry, data is updating . . .</Text>}
+				{data.length <= 0 && <Text>Data is comming soon . . .</Text>}
 				{isLoading &&
 					skeletons.map((skeleton) => (
 						<GameCardContainer key={skeleton}>
